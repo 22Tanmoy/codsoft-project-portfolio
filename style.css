@@ -1,0 +1,661 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    -webkit-font-smotthing:antialiased; /* text looking smoot*/
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    background-color: black;
+    background: linear-gradient(45deg,rgb(246, 110, 6),rgb(6, 165, 223));
+}
+.container{
+    max-width: 1060px;  /* its take space from right. thats mean max width is low then make grater space from right*/
+    padding: 0x 15px;   /* top padding 0 and left padding 15px*/
+    margin: 0px auto;   /* top margin 0 and left margin 15px*/
+   display: flex;      /* use for all element comes in one line*/
+   align-items: center;     /* items comes in center*/
+   justify-content: space-between;
+}
+header nav{
+    padding-top:8px;
+}
+.left{
+    display: flex;     /* use for all element comes in one line*/
+    align-items: center; /* items comes in center*/
+}
+.logo{
+    margin-right: 55px; /* create space btw logo and home*/
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none; /* its use for remove the underline*/
+    margin-right: 35px;  /* using space beteen home  skill and etc mean nav element*/
+    text-transform: uppercase; /* its make all the char is upper*/
+    font-weight: 600;
+    transition: all .3s ease; /* its make smooth hover color , not fast*/
+    cursor: pointer;
+}
+a:hover{
+    color: aqua;
+}
+.btn{
+    padding: 12.8px 32px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: hsl(189, 98%, 49%);
+    border: 2px solid rgb(115, 242, 4);
+    transition: all .3s ease; /* its make smooth hover color , not fast*/
+    cursor: pointer;
+}
+.btn:hover{
+    color: #9ef705;
+    background-color: black;
+    border-color:rgb(4, 141, 240);  
+}
+.none{
+    display: flex;
+    background: linear-gradient(45deg,#9ef005,rgb(8, 229, 241));
+    align-items: center;
+    clip-path: polygon(0 0,100% 0,100% 100%,71% 84%,0 100%); /*its help to create a triangle shape on botton*/
+}
+.name{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    margin-right: 80px;
+}
+.position{
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+.para{
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+.picspan{
+    padding-left: 150px;
+}
+.MyPhoto{
+    flex: 1;
+}
+.none .MySelf{
+    color: rgb(0, 0, 0);
+    flex: 1;
+}
+.spanstyle{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.spanstyle:hover{
+    color: #c206fb;
+}
+.cv{
+    padding: 12.8px 32px;
+    margin-top: 2rem;
+    color: rgb(10, 225, 236);
+    font-weight: bold;
+    font-size: 15px;
+    background-color: rgb(5, 5, 5);
+    border: 2px solid rgb(2, 18, 243);
+    transition: all .3s ease; /* its make smooth hover color , not fast*/
+    cursor: pointer;
+}
+.cv:hover{
+    color: #000000;
+    background-color: rgb(6, 239, 232);
+    border-color:rgb(238, 5, 91); 
+}
+section{
+    padding: 3rem 0;
+}
+.aboutsec{
+    background: linear-gradient(45deg,#f005e4,rgb(239, 141, 4));
+    clip-path: polygon(0 0,100% 0,100% 100%,15% 87%,0 100%);
+}
+.aboutsec:hover{
+    background: linear-gradient(45deg,#1d32be,rgb(239, 4, 157));
+}
+.container2{
+    max-width: 1060px;  /* its take space from right. thats mean max width is low then make grater space from right*/
+                        /* top padding 0 and left padding 15px*/
+    margin: 0px auto;   /* top margin 0 and left margin 15px*/
+   display: flex;      /* use for all element comes in one line*/
+   align-items: center;     /* items comes in center*/
+   justify-content: space-between;
+   padding-right: 10px;
+}
+.aboutphoto{
+    padding-left:0px;
+    
+    border-radius:30px ;
+    background: linear-gradient(45deg,#f00534,rgb(231, 239, 4));
+}
+.aboutphoto:hover{
+    background: linear-gradient(45deg,#d8ef04,rgb(239, 59, 4));
+}
+.aboutself{
+    border: 3px solid green;
+    border-radius: 6px;
+    padding: 0px 20px;
+    background: linear-gradient(45deg,#ef0427,rgb(4, 118, 240));
+}
+.aboutself:hover{
+    background: linear-gradient(45deg,#044bf0,rgb(229, 8, 93));
+}
+.aboutself h1{
+    color: rgb(255, 255, 0);
+    font-weight: 500;
+    font-size: 40px;
+    padding: 2px 35px;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.aboutself h1 span{
+    color: #9ef005;
+}
+.aboutself h2{
+    font-family: sans-serif;
+    color: #9ef005;
+    line-height: 1.6;
+}
+.aboutself h2 .H2{
+    color: #ffff00;
+}
+.aboutself p{
+    margin-top: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: #00eaff;
+}
+.aboutself p .dev{
+    color: #00ff04;
+}
+.aboutself p .dev:hover{
+    color: #fff703;
+}
+.aboutself .icon{
+    font-size: 25px;
+    margin: 8px;
+   padding: 3px;
+}
+.material-icons:hover{
+    color:#000000 
+}
+.fa {
+   color: #e9dde8;
+   }
+   .fa:hover{
+     color: black;
+     transition: all .5s ease;
+   }
+   
+#service{
+    background: linear-gradient(45deg,#f00567,rgb(240, 96, 1));
+    clip-path: polygon(0 0,100% 0,100% 100%,71% 92%,0 100%);
+    padding-left: 70px;
+}
+  .skill{
+    /*padding-left: 62%;*/
+    font-size: 40px;
+    color: #87f706;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+    text-shadow:9px 9px #655667;
+  }
+.parag{
+    /*padding-left: 54%;*/
+    line-height: 1;
+    font-size: 25px;
+    color: #38f309;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1;
+  }
+ 
+  .card{
+  text-align: center;
+   /*padding-left: 10px;*/
+   background:linear-gradient(45deg,#30a904,rgb(14, 153, 184)); /* use for card background*/
+   width: 400px;
+   height: 200px;
+   border: 2px solid greenyellow;
+   border-radius: 3px;
+   margin-top: 2px;
+   box-shadow: 15px 15px 20px rgb(3, 243, 91);
+   margin-bottom: 50px;
+   
+  }
+  .card:hover{
+    color:rgb(237, 245, 245);
+    box-shadow: 10px 15px 20px rgb(238, 206, 4);
+  }
+.card-wrapper{
+    text-align: center;
+   display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* create 3 roe 3 col grid*/
+    grid-column-gap: 1rem;
+   grid-row-gap: 1rem;
+   
+  }
+  .card img{
+    margin: 2px;
+
+  }
+.card p{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1px 1px rgb(196, 203, 209);
+}
+.checked {
+    color: orange;
+  }
+#portfolio{
+    background: linear-gradient(45deg,#f804f8,rgb(226, 234, 7));
+    clip-path: polygon(0 0,100% 0,100% 100%,15% 87%,0 100%);
+   padding-top: 10px;
+   padding-bottom: 10px;
+   
+}
+.portfolio-gallery{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    gap: 5rem;
+    grid-row-gap: 1rem;
+    height: 80%;
+    width: 80%;
+    padding-left: 120px;
+    margin: 100px;
+    margin-top: 5px;
+}
+.main-text h2{
+    text-align: center;
+    text-shadow:  3px 3px rgb(4, 58, 206);
+    font-size: 30px;
+    color: #ec0a99;
+    word-spacing: 5px;
+   
+
+}
+.port-box{
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    border: 2px solid aqua;
+    margin-top: 30px;
+    box-shadow: -30px -15px 20px rgb(225, 245, 2);
+}
+.port-box:hover{
+    box-shadow: -30px 15px 20px rgb(11, 233, 3);
+}
+.port-content:hover{
+    box-shadow: -30px 15px 20px rgb(11, 233, 3);
+}
+.port-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.port-image img{
+    width: 100%;
+    height: 100%;
+    opacity: .5s;
+    transition: .5s;
+}
+.port-content{
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f6f6f6;
+    font-weight: 700;
+    font-size: 18px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,.3),rgb(5, 237, 221));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.5s;
+    padding: 0 2rem;
+    
+}
+.port-content a{
+    border-radius: 50px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+.port-content  button{
+    padding: 5px;
+    margin: 5px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-bottom: 5px;
+    background: #38f309;
+    cursor: pointer;
+    box-shadow: -5px 3px 2px rgb(226, 2, 126);
+}
+.port-box:hover .port-image img{
+    transform: scale(1.1);
+}
+.port-content  button:hover{
+    color: white;
+    box-shadow: -5px 3px 2px rgb(236, 240, 1);
+}
+section.freelancer{
+    text-align: center;
+    color: white;
+    padding-bottom: 8%;
+    clip-path: polygon(0 0,100% 0,100% 100%,75% 65%,0 100%);
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(tech2.jpeg);
+    
+}
+.freelancer h1{
+    font-size: 2.5rem;
+    margin-bottom: 0.2rem;
+}
+.freelancer p{
+    font-size: 18px;
+    margin-bottom:1.1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.freelancer .btn4{
+    padding: 12.8px 32px;
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 15px;
+    background-color: hsl(189, 98%, 49%);
+    border: 2px solid rgb(115, 242, 4);
+    transition: all .3s ease; /* its make smooth hover color , not fast*/
+    cursor: pointer;
+}
+.btn4:hover{
+    color: #9ef705;
+    background-color: black;
+    border-color:rgb(4, 141, 240);  
+}
+
+#achivement{
+   background: linear-gradient(45deg,#19ac63,rgb(165, 179, 22));
+   height: 100%;
+   width: 100%;
+   clip-path: polygon(0 0,100% 0,100% 100%,20% 88%,0 100%);
+   padding-top: 5px;
+}
+.achivement-gallery{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    gap: 5rem;
+    grid-row-gap: 3rem;
+    height: 80%;
+    width: 80%;
+    padding-left: 120px;
+    margin: 100px;
+    margin-top: 5px;
+    
+}
+.main-text h1{
+    text-align: center;
+    text-shadow:  3px 3px rgb(21, 60, 166);
+    font-size: 40px;
+    color: #eb4c02;
+    word-spacing: 5px;
+
+}
+.achivement-box{
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    margin-top: 30px;
+    grid-template-columns: 1fr auto;
+    border: 3px solid aqua;
+    box-shadow: -30px -15px 20px rgb(225, 245, 2);
+}
+.achivement-box:hover{
+    box-shadow: -30px 15px 20px rgb(11, 233, 3);
+}
+.port-content:hover{
+    box-shadow: -30px 15px 20px rgb(11, 233, 3);
+}
+.achivement-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.achivement-image img{
+    width: 100%;
+    height: 100%;
+    opacity: .5s;
+    transition: .5s;
+}
+.achivement-content{
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f6f6f6;
+    font-weight: 700;
+    font-size: 18px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.5s;
+    padding: 0 2rem;
+
+}
+.achivement-content a{
+    /*background: rgb(186, 14, 14);*/
+    border-radius: 50px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+.achivement-box:hover .achivement-image img{
+    transform: scale(1.1);
+}
+.achivement-content  button:hover{
+    box-shadow: -5px 3px 2px rgb(236, 240, 1);
+}
+section.contact{
+    background: #f5f5f5;
+    background-image: url(img2.jpg);
+    background-size: cover;
+    height: 40%;
+    width: 100%;
+    
+}
+.container7{
+    max-width:1152px;
+    padding:0 15px;
+    margin:0 auto;
+}
+.container7 .contacth1{
+    color:rgb(86, 249, 5); 
+    text-align: center;
+    margin-bottom:1rem;
+    line-height: 0.8;
+    font-size: 30px;
+}
+.container7 .contacth1 span{
+    color: #00eaff;
+}
+.container7 .contactp{
+    color:rgb(248, 248, 11); 
+    text-align: center;
+    margin-bottom:3rem;
+    line-height: 0.8;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+}
+.cont h2{
+    margin-bottom: 5px;
+    color: #00eaff;
+}
+.cont h5{
+    margin-bottom: 10px;
+    color: yellow;
+}
+.cont-wrapper{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:1rem;
+}
+.cont{
+    text-align: center;
+}
+.cont img{
+    margin-bottom: 0.5rem;
+    height: 40%;
+    width: 20%;
+}
+.textc{
+    font-size: 20px;
+    cursor: pointer;
+}
+.textc:hover{
+    color: #00eaff;
+}
+.textc a{
+    text-transform: lowercase;
+}
+.textcm a{
+    color: #f9e904;
+    text-transform: lowercase;
+    padding-left: 25px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.textcm a:hover{
+    color: #00f7ff;
+}
+.img101{
+    border: 4px solid rgb(59, 244, 8);
+    border-radius: 10px;
+}
+.img102{
+    border: 4px solid rgb(38, 238, 7);
+    border-radius: 10px;
+}
+.img103{
+    border: 4px solid rgb(53, 245, 0);
+    border-radius: 10px;
+}
+.img101:hover ,.img102:hover ,.img103:hover{
+     border: 4px solid aqua;
+}
+.textcs .fa{
+    color: #ebf707;
+    text-transform: lowercase;
+    padding-left: 25px;
+   margin-top: 0.5rem;
+    font-size: 20px;
+}
+.textcs .fa:hover{
+    color: #00eaff;
+    transform: scale(1.1);
+}
+.cont img:hover{
+    transform: scale(1.2);
+}
+.input-wrap{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   grid-gap: 2rem;
+   margin-bottom: 2rem;
+   
+}
+.input-wrap2{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2rem;
+}
+section.contact input{
+    padding: 0.5rem ;
+    border: 2px solid rgb(234, 226, 226);
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: -10px 3px 2px rgb(234, 4, 150);
+}
+section.contact input:focus{
+    outline: #236d74;
+    background: #04fbde;
+}
+section.contact input:hover , .input-wrap2 textarea:hover{
+    box-shadow: 10px 3px 2px rgb(137, 228, 1);
+}
+.input-wrap2 textarea{
+    padding: 0.5rem;
+    border: 2px solid rgb(218, 205, 205);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: -10px 3px 2px rgb(234, 4, 150);
+}
+.input-wrap2 textarea:focus{
+    outline: #236d74;
+    background: #05eafa;
+}
+.btn5-wrap{
+    text-align: center;
+}
+.btn5{
+    padding: 12.8px 32px;
+    color: rgb(10, 219, 242);
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 15px;
+    background-color: hsl(240, 3%, 6%);
+    border: 2px solid rgb(107, 239, 6);
+    transition: all .3s ease; /* its make smooth hover color , not fast*/
+    cursor: pointer;
+    align-items: center;
+}
+.btn5:hover{
+    color: #9ef705;
+    background-color: black;
+    border-color:rgb(4, 141, 240);  
+}
+footer{
+    text-align: right;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 5px;
+}
